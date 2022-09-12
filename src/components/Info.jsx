@@ -21,9 +21,9 @@ function Info() {
     let currentNum=document.querySelector('#num').value;
     let currentRate=document.querySelector('#rate').value;
 
-    let sum= (parseFloat(currentNum)*parseFloat(currentRate))/15000;
+    let sum= (parseFloat(currentNum).toFixed(2)*parseFloat(currentRate).toFixed(2))/15000;
     setHashUnit(sum);
-    let sum2= sum*1777.32;
+    let sum2= sum*1777;
     setDollar(sum2);
     document.querySelector('#num').value="";
     

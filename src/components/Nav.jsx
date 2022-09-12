@@ -32,7 +32,7 @@ function Nav() {
         </div>
 
         {/* For mobile */}
-        <div className={`${styles.hamburger} ${open ? 'rotate180' : 'rotate0'}`} onClick={() => {setOpen(!open)}}>
+        <div className={`${styles.hamburger} ${open ? 'fixed' : 'relative'}`} onClick={() => {setOpen(!open)}}>
           <span  className={`${styles.one} ${open ? 'ex' : 'normal'}`} onClick={() => {setOpen(!open)}}></span>
           <span  className={`${styles.two} ${open ? 'ex2' : 'normal'}`} onClick={() => {setOpen(!open)}}></span>
         </div>

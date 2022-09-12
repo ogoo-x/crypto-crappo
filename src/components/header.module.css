@@ -97,7 +97,8 @@
     .illustration {
        margin-top: 30px;
     }    
-
+}
+@media screen and (max-width: 1200px) {
     .microDesign {
         display: none;
     }

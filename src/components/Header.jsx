@@ -18,13 +18,14 @@ function Header() {
   }, []);
 
   return (
-    <div  data-aos="fade-up"
-          data-aos-easing="ease" 
-          data-aos-duration="1000"
-          data-aos-delay="100">
+    <div>
       <div className={styles.body}>
         <div className={styles.container}>
-          <div className={`${styles.children} ${styles.valueProp}`}>
+          <div className={`${styles.children} ${styles.valueProp}`}
+               data-aos="fade-up"
+              data-aos-easing="ease" 
+              data-aos-duration="1000"
+              data-aos-delay="100">
             <div className={styles.prompt}>
               <p className={styles.save}>75% SAVE</p>
               <p>For the Black Friday weekend</p>
@@ -39,7 +40,11 @@ function Header() {
 
           <img src={Illustration} 
                alt="Bitcoin Illustration" 
-               className={`${styles.illustration} ${styles.children}`}/>
+               className={`${styles.illustration} ${styles.children}`}
+               data-aos="fade-up"
+                data-aos-easing="ease" 
+                data-aos-duration="1000"
+                data-aos-delay="200"/>
         </div>
       </div>
       <img src={microDesign} alt="" className={styles.microDesign}/>

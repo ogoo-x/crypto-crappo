@@ -105,26 +105,49 @@ button:hover {
 }
 
 .normal {
+  transform-origin: 0%;
   transition: 0.3s;
-  transform: rotateX(0);
+  transform: rotate(0);
 }
 
 .ex {
+  transform-origin: 20%;
   transition: 0.3s;
-  transform: rotate(45deg) translate(5px 5px);
+  transform: rotate(45deg) ;
 
 }
 
 .ex2 {
+  transform-origin: 20%;
   transition: 0.3s;
-  transform: rotate(-45deg) translate(7px, -6px);
+  transform: rotate(-45deg) ;
 }
 
-.rotate180 {
-  transition: 0.3s;
-  transform: rotate(20deg);
+.fixed {
+  position: fixed;
+  z-index: 150;
+  right:7vw;
 }
 
+@media screen and (min-width: 657px) {
+  .fixed {
+    position: fixed;
+    z-index: 150;
+    right:120px;
+  }  
+}
+
+@media screen and (max-width: 450px) {
+  .fixed {
+    position: fixed;
+    z-index: 150;
+    right:12vw;
+  }
+}
+
+.relative {
+  position: relative;
+}
 /* onclick functionality of Coin cards */
 .active {
   transition: 0.2s ease-in;
